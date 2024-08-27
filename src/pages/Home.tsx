@@ -1,7 +1,10 @@
+import Intro from "../components/Intro";
+import Header from "../components/Header";
+
 const Home: React.FC = () => {
     return (
         <>
-            <div> Hello world </div>
+            <Header/>
         </>
     );
 };
