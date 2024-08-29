@@ -80,3 +80,58 @@
 .intro-button:hover {
     border-color: #f9f9f9;
 }
+
+/* Project Cards */
+
+.project-card {
+    width: 100%;
+    max-width: 30em;
+    margin: 1em auto;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-title {
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.project-body {
+    font-size: 1em;
+    margin: 0.5em 0;
+}
+
+.project-link {
+    font-size: 0.875em;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 1em;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+.project-image-container {
+    width: 100%;
+    padding-top: 56.25%;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.project-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.25em;
+}
