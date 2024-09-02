@@ -12,7 +12,7 @@ const Header: React.FC = () => {
         <div className="header">
             <h1 className="header-name"> Andrew Li </h1>
             <nav className="header-nav">
-                {['About Me', 'Personal Projects', 'Extracurriculars', 'Skills', 'Contact Me'].map((link) => (
+                {['About Me', 'Previous Projects', 'Extracurriculars', 'Skills', 'Contact Me'].map((link) => (
                     <div
                         key={link}
                         className={`nav-link ${activeLink === link ? 'active' : ''}`}
