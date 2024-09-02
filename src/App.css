@@ -1,9 +1,6 @@
 /* Seperator */
-.h-line {
-    width: 100%;
-    height: 1px;
-    color: #000000;
-    background-color: #fff;
+hr {
+
 }
 
 /* Header */
@@ -92,20 +89,26 @@
 /* Project Cards */
 
 .project-section {
-    height: 70vh;
-    background-color: #435a77;
+    height: fit-content;
+    background-color: #AA6373;
+}
+
+.project-section h1 {
+    text-align: center;
+    margin-top: 1em;
 }
 
 .project-grid {
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .project-card {
-    width: 100%;
-    max-width: 30em;
+    width: 25em;
     margin: 1em auto;
     padding: 1em;
     border: 1px solid #ccc;
@@ -115,9 +118,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     margin-left: 1em;
     margin-right: 1em;
+    height: 65vh;
 }
 
 .project-title {
@@ -157,5 +161,125 @@
     height: 100%;
     object-fit: cover;
     border-radius: 0.25em;
+    border: 5px solid black;
 }
 
+/* Extracurriculars */
+.extra-section {
+    height: fit-content;
+}
+
+.extra-section h1 {
+    text-align: center;
+}
+
+.extra-grid {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.extra-card-img {
+    width: 70em;
+    margin: 1em auto;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    align-items: flex-start;
+
+    margin-left: 1em;
+    margin-right: 1em;
+    height: fit-content;
+}
+
+
+.extra-image-container-img {
+    width: 60%;
+    position: relative;
+    padding-top: 44.4%;
+    margin-right: 2.5em;
+}
+
+.extra-image-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.25em;
+    border: 5px solid black;
+}
+
+.extra-card {
+    width: 20em;
+    margin: 1em auto;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-left: 1em;
+    margin-right: 1em;
+    height: 50vh;
+}
+
+.extra-title {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.extra-body {
+    font-size: 1.25em;
+}
+
+
+/* Skills */
+
+.skills-section {
+    height: fit-content;
+}
+
+.skills-section h1 {
+    text-align: center;
+}
+
+.skills-section {
+    padding: 1em;
+}
+
+.skill {
+    margin-bottom: 1em;
+}
+
+.skill-name {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.skill-bar {
+    background-color: #e0e0e0;
+    border-radius: 0.25em;
+    height: 1em;
+    width: 100%;
+    position: relative;
+}
+
+.skill-level {
+    background-color: #007bff;
+    height: 100%;
+    border-radius: 0.25em;
+    transition: width 0.3s ease;
+    width: 80%;
+}
