@@ -249,37 +249,35 @@ hr {
 
 .skills-section {
     height: fit-content;
+    padding: 1em;
 }
 
 .skills-section h1 {
     text-align: center;
 }
 
-.skills-section {
-    padding: 1em;
+.skills-grid {
+    display: flex;
+    flex-direction: column;
 }
 
-.skill {
-    margin-bottom: 1em;
+.skill-category {
+    
+}
+
+.skill-cards {
+    display: flex;
+}
+
+.skill-block {
+    width: 10%;
+    background-color: #AA6373;
+    padding: 1em;
+    border-radius: 10px;
+    margin: 1em;
 }
 
 .skill-name {
     margin-bottom: 0.5em;
     font-weight: bold;
-}
-
-.skill-bar {
-    background-color: #e0e0e0;
-    border-radius: 0.25em;
-    height: 1em;
-    width: 100%;
-    position: relative;
-}
-
-.skill-level {
-    background-color: #007bff;
-    height: 100%;
-    border-radius: 0.25em;
-    transition: width 0.3s ease;
-    width: 80%;
 }
