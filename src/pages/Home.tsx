@@ -16,6 +16,8 @@ const Home: React.FC = () => {
             <Extracurriculars/>
             <Hline/>
             <Skills/>
+            <Hline/>
+            
         </>
     );
 };

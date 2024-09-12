@@ -250,34 +250,74 @@ hr {
 .skills-section {
     height: fit-content;
     padding: 1em;
-}
-
-.skills-section h1 {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .skills-grid {
     display: flex;
     flex-direction: column;
+    width: 98%;
 }
 
-.skill-category {
-    
+.skill-category h2 {
+    margin-bottom: 0;
 }
 
-.skill-cards {
+.skill-cards-line {
     display: flex;
 }
 
 .skill-block {
     width: 10%;
+    min-width: 125px;
+    height: 11vh;
+    min-height: fit-content;
     background-color: #AA6373;
     padding: 1em;
     border-radius: 10px;
     margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .skill-name {
-    margin-bottom: 0.5em;
     font-weight: bold;
+}
+
+.skill-clarification {
+    overflow: hidden;
+    transition: max-height 1s ease-in-out; 
+    text-align: center;
+}
+
+.skill-clarification.visible {
+    max-height: 10vh; 
+}
+
+.skill-clarification.hidden {
+    max-height: 0;
+}
+
+
+/* Animation for skills */
+
+@keyframes expand {
+    from {
+      max-height: 0;
+    }
+    to {
+      max-height: 10vh; 
+    }
+}
+@keyframes collapse {
+    from {
+      max-height: 10vh; 
+    }
+    to {
+      max-height: 0;
+    }
 }

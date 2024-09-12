@@ -12,7 +12,7 @@ const Skills:React.FC = () => {
         {
           categoryName: "Frameworks",
           skills: [
-            { name: "React", proficiency: "Advanced" },
+            { name: "React", proficiency: "Advanced", description: "I have a max of 3 lines for this"},
             { name: "Node.js", proficiency: "Intermediate" }
           ]
         }
