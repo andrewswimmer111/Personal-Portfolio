@@ -19,7 +19,7 @@ const Skills:React.FC = () => {
     ];
 
     return (
-        <div className="skills-section">
+        <div id="Skills" className="skills-section section-correction">
             <h1> Skills</h1>
             <div className="skills-grid">
                 {skillData.map((category, index) => (

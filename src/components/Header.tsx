@@ -1,11 +1,12 @@
-import { useState } from "react";
-
 const Header: React.FC = () => {
 
-    const [activeLink, setActiveLink] = useState<string | null>(null);
-
     const handleClick = (link: string) => {
-        setActiveLink(link);
+        const section = document.getElementById(link); 
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' }); 
+        } else {
+            console.error(`section with ID '${link}' not found`);
+        }
     };
 
     return (
@@ -15,7 +16,7 @@ const Header: React.FC = () => {
                 {['About Me', 'Projects', 'Extracurriculars', 'Skills', 'Contact Me'].map((link) => (
                     <div
                         key={link}
-                        className={`nav-link ${activeLink === link ? 'active' : ''}`}
+                        className='nav-link'
                         onClick={() => handleClick(link)}
                     >
                         {link}

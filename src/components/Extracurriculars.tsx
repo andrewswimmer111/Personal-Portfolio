@@ -26,7 +26,7 @@ const Extracurriculars:React.FC = () => {
         }
     ]
     return (
-        <div className="extra-section">
+        <div id="Extracurriculars" className="extra-section  section-correction">
             <h1> Extracurriculars</h1>
             <div className="extra-grid">
                 {extraImg.map((extra, index) => ( 

@@ -1,23 +1,22 @@
 import Intro from "../components/Intro";
 import Header from "../components/Header";
 import Projects from "../components/Projects";
-import Hline from "../components/Hline";
 import Extracurriculars from "../components/Extracurriculars";
 import Skills from "../components/Skills";
+import ContactMe from "../components/ContactMe";
 
 const Home: React.FC = () => {
     return (
         <>
             <Header/>
             <Intro/>
-            <Hline/>
+            <hr></hr>            
             <Projects/>
-            <Hline/>
+            <hr></hr>           
             <Extracurriculars/>
-            <Hline/>
+            <hr></hr>
             <Skills/>
-            <Hline/>
-            
+            <ContactMe/>
         </>
     );
 };

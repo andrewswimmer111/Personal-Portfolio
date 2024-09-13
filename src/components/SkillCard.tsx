@@ -18,10 +18,8 @@ const SkillCard:React.FC<SkillCardProps> = ( {skillName, proficiency, descriptio
         >
             <div className="skill-name"> {skillName} </div>
             <div className={`skill-clarification ${isHovered ? 'visible' : 'hidden'}`}>
-                {proficiency}
-            </div>
-            <div className={`skill-clarification ${isHovered ? 'visible' : 'hidden'}`}>
-                {description}
+                <div>{proficiency}</div>
+                <div>{description}</div>
             </div>
         </div>
     )

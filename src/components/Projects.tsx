@@ -24,7 +24,7 @@ const Projects: React.FC = () => {
     ]
 
     return (
-        <div className="project-section">
+        <div id="Projects" className="project-section section-correction">
             <h1> Previous Projects </h1>
             <div className="project-grid"> 
                 {projects.map((project, index) => (

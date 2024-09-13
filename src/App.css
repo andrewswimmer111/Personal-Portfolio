@@ -1,6 +1,14 @@
-/* Seperator */
+/* Global */
 hr {
 
+}
+
+h1 {
+    text-align: center;
+}
+
+.section-correction {
+    padding-top: 1em;
 }
 
 /* Header */
@@ -16,6 +24,7 @@ hr {
     margin-left: 3rem;
     width: 50%;
     padding: 1rem;
+    text-align: left;
 }
 
 .header-nav {
@@ -33,10 +42,13 @@ hr {
     border-radius: 5px; 
     font-size: larger;
     text-align: center;
+    transition: transform 0.3s ease;
 }
 
 .nav-link:hover {
     background-color: #435a77;
+    transform: scale(1.05);
+
 }
 
 .nav-link.active {
@@ -63,6 +75,13 @@ hr {
     position: relative;
     margin-right: 1rem;
     float: right;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro-photo-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .profile-picture {
@@ -75,6 +94,10 @@ hr {
 .intro-text {
     width: 50%; 
     padding: 0 2rem;
+}
+
+.intro-text h1 {
+    text-align: left;
 }
 
 .intro-button {
@@ -90,13 +113,8 @@ hr {
 
 .project-section {
     height: fit-content;
-    background-color: #AA6373;
 }
 
-.project-section h1 {
-    text-align: center;
-    margin-top: 1em;
-}
 
 .project-grid {
     height: 100%;
@@ -122,6 +140,7 @@ hr {
     margin-left: 1em;
     margin-right: 1em;
     height: 65vh;
+    margin-bottom: 3em;
 }
 
 .project-title {
@@ -167,10 +186,6 @@ hr {
 /* Extracurriculars */
 .extra-section {
     height: fit-content;
-}
-
-.extra-section h1 {
-    text-align: center;
 }
 
 .extra-grid {
@@ -232,6 +247,7 @@ hr {
     margin-left: 1em;
     margin-right: 1em;
     height: 50vh;
+    margin-bottom: 3em;
 }
 
 .extra-title {
@@ -290,7 +306,7 @@ hr {
 
 .skill-clarification {
     overflow: hidden;
-    transition: max-height 1s ease-in-out; 
+    transition: max-height .5s ease-in-out; 
     text-align: center;
 }
 
@@ -321,3 +337,43 @@ hr {
       max-height: 0;
     }
 }
+
+
+/* Contact Me Section */
+.contact-section {
+    height: fit-content;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.contact-call {
+    font-size: 2rem; 
+    margin-left: 2em;
+
+}
+
+.contact-column {
+    display: grid;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+}
+
+.contact-column a {
+    color: whitesmoke;
+    font-size: large;
+    transition: transform 0.3s ease;
+}
+
+.contact-column a:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+
