@@ -327,7 +327,15 @@ h1 {
     background-color: #435a77;
     width: 20%;
     min-width: 125px;
+    color: white;
 
+}
+
+.skill-category.keyData h2{
+    color: black;
+    text-align: center;
+    font-size: 1em;
+    margin-top: -1em;
 }
 
 .skill-category.keyData .skill-cards-line {

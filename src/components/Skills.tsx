@@ -4,12 +4,12 @@ const Skills:React.FC = () => {
 
     const keyData = [
       {
-        categoryName: "Levels (hover)",
+        categoryName: "(Hover to see descriptions)",
         skills: [
-          {name: "Novice", proficiency: "", description: "Simple task completion"},
-          {name: "Basic", proficiency: "", description: "Fundamental knowledge, simple tasks"},
-          {name: "Intermediate", proficiency: "", description: "Solid understanding with practical experience"},
-          {name: "Proficient", proficiency: "", description: "Deep knowledge and extensive experience"}
+          {name: "Proficient", proficiency: "", description: "Has deep knowledge, extensive experience, and can troubleshoot complex problems"},
+          {name: "Intermediate", proficiency: "", description: "Has both solid understanding and experience in more complex tasks"},
+          {name: "Basic", proficiency: "", description: "Understands core concepts and fundamental principles, and is able to complete tasks independently"},
+          {name: "Novice", proficiency: "", description: "Able to complete simple tasks with guidance, but only has functional knowledge"},
         ]
       }
     ]
@@ -18,8 +18,11 @@ const Skills:React.FC = () => {
         {
           categoryName: "Programming Languages",
           skills: [
-            { name: "JavaScript", proficiency: "Expert" },
-            { name: "Python", proficiency: "Intermediate" }
+            { name: "Java", proficiency: "Intermediate" },
+            { name: "JavaScript", proficiency: "Intermediate" },
+            { name: "TypeScript", proficiency: "Intermediate" },
+            { name: "Python", proficiency: "Basic" },
+            { name: "Ruby", proficiency: "Novice" },
           ]
         },
         {
@@ -27,10 +30,10 @@ const Skills:React.FC = () => {
           skills: [
             { name: "React", proficiency: "Intermediate" },
             { name: "Ruby on Rails", proficiency: "Intermediate" },
-            { name: "Express.js", proficiency: "Beginner" },
             { name: "TailwindCSS", proficiency: "Basic" },
             { name: "BootStrapCSS", proficiency: "Basic" },
             { name: "HTML Canvas", proficiency: "Basic" },
+            { name: "Express.js", proficiency: "Novice" },
         ]
         },
         {
@@ -38,8 +41,9 @@ const Skills:React.FC = () => {
           skills: [
             {name: "Git", proficiency: "Intermediate"},
             {name: "Docker", proficiency: "Intermediate"},
-            {name: "Command Line", proficiency: "Basic"}
-
+            {name: "Command Line", proficiency: "Basic"},
+            {name: "AWS EC2", proficiency: "Basic"},
+            {name: "DNS Configuration", proficiency: "Novice"},
 
           ]
         }
