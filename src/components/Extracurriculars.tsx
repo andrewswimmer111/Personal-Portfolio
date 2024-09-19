@@ -7,7 +7,7 @@ const Extracurriculars:React.FC = () => {
         {
             title: "Testing",
             description: "I'm testing right now",
-            imageURL: "/public/images/head.jpg",
+            imageURL: "/images/head.jpg",
         }
     ]
 

@@ -4,23 +4,17 @@ const Projects: React.FC = () => {
 
     const projects = [
         {
-            title: "Test",
-            description: "Hi! I’m a sophomore at Duke University majoring in computer science. I want to make peoples’ lives easier and more enjoyable using technology. While I currently have a strong interest in software engineering, I’m also open to exploring other areas within the tech field where I can learn and grow. I love personal development, so I’m always looking for opportunities to take on new challenges and expand my skills.",
-            imageURL: "/public/images/head.jpg",
-            projectLink: "https://www.dukefood-test.com",
+            title: "Community Capital",
+            description: "When families move to a new neighborhood, finding nearby community resources can be challenging. To address this, I worked with a team of five other students through the Duke Code+ summer program, developing a website that visualizes public schools and surrounding resources (which are curated by community leaders). While the current site only covers Durham County in North Carolina, this semester, I’m working as a Student Developer Intern for Duke OIT to help expand the website to other counties and to make additional improvements.",
+            imageURL: "/images/community.png",
+            projectLink: "https://community-capital-test.oit.duke.edu/",
         },
         {
-            title: "Test",
-            description: "Hi! I’m a sophomore at Duke University majoring in computer science. I want to make peoples’ lives easier and more enjoyable using technology. While I currently have a strong interest in software engineering, I’m also open to exploring other areas within the tech field where I can learn and grow. I love personal development, so I’m always looking for opportunities to take on new challenges and expand my skills.",
-            imageURL: "/public/images/head.jpg",
-            projectLink: "https://www.dukefood-test.com",
+            title: "Duke Food Tracker",
+            description: "Many Duke students, especially first-years, struggle to manage their food points effectively throughout the semester. To help, I developed a website where students can log their meals and view stats such as their most ordered meals, favorite restaurants, and total food point consumption. While functional, the initial version had issues like inefficient data storage, messy code structure, and requiring manual input for each meal. I’m now working on a second version with significant improvements in both design and functionality.",
+            imageURL: "/images/food.png",
+            projectLink: "",
         },
-        {
-            title: "Test",
-            description: "Hello, short description",
-            imageURL: "/public/images/head.jpg",
-            projectLink: "https://www.dukefood-test.com",
-        }
     ]
 
     return (

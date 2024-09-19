@@ -14,7 +14,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageURL,
                 <img src={imageURL} className="project-image"></img>
             </div>
             <div className="project-body">{description}</div>
-            <div className="project-link">{projectLink}</div>
+            <a className="project-link" href={projectLink} target="_blank">{projectLink} </a>
         </div>
     )
 }

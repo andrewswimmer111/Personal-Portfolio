@@ -4,15 +4,16 @@ interface SkillCardProps {
     skillName: string,
     proficiency: string,
     description?: string,
+    style: string,
 }
 
-const SkillCard:React.FC<SkillCardProps> = ( {skillName, proficiency, description}) => {
+const SkillCard:React.FC<SkillCardProps> = ( {skillName, proficiency, description, style}) => {
 
     const [isHovered, setIsHovered] = useState(false);
 
     return (
         <div 
-            className="skill-block"
+            className={`skill-block ${style}`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >

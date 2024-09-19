@@ -7,8 +7,8 @@ interface ExtraCardImgProps {
 const ExtraCardImg:React.FC<ExtraCardImgProps> = ( {title, description, imageURL}) => {
     return (
         <div className="extra-card-img">
-            <div className="extra-image-container-img">
-                <img src={imageURL} className="extra-image-img"></img>
+            <div className="extra-image-container">
+                <img src={imageURL} className="extra-image"></img>
             </div>
             <div className="extra-content-img">
                 <div className="extra-title"> {title} </div>

@@ -75,13 +75,6 @@ h1 {
     position: relative;
     margin-right: 1rem;
     float: right;
-
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.intro-photo-container:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .profile-picture {
@@ -126,7 +119,7 @@ h1 {
 }
 
 .project-card {
-    width: 25em;
+    width: 40em;
     margin: 1em auto;
     padding: 1em;
     border: 1px solid #ccc;
@@ -139,7 +132,7 @@ h1 {
 
     margin-left: 1em;
     margin-right: 1em;
-    height: 65vh;
+    height: 75vh;
     margin-bottom: 3em;
 }
 
@@ -170,6 +163,9 @@ h1 {
     padding-top: 56.25%;
     position: relative;
     margin-bottom: 1em;
+    border-radius: 0.25em;
+    border: 3px solid #AA6373;
+    overflow: hidden;
 }
 
 .project-image {
@@ -179,8 +175,6 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0.25em;
-    border: 5px solid black;
 }
 
 /* Extracurriculars */
@@ -214,22 +208,30 @@ h1 {
 }
 
 
-.extra-image-container-img {
-    width: 60%;
+.extra-image-container {
+    width: 56%;
     position: relative;
     padding-top: 44.4%;
     margin-right: 2.5em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 5px solid black;
+    border-radius: 0.25em;
+
+
 }
 
-.extra-image-img {
+.extra-image-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.extra-image {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0.25em;
-    border: 5px solid black;
 }
 
 .extra-card {
@@ -283,12 +285,13 @@ h1 {
 
 .skill-cards-line {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .skill-block {
     width: 10%;
     min-width: 125px;
-    height: 11vh;
+    height: 7vh;
     min-height: fit-content;
     background-color: #AA6373;
     padding: 1em;
@@ -319,6 +322,19 @@ h1 {
 }
 
 
+.skill-block.keyData {
+    height: 11vh;
+    background-color: #435a77;
+    width: 20%;
+    min-width: 125px;
+
+}
+
+.skill-category.keyData .skill-cards-line {
+    justify-content: center;
+}
+
+
 /* Animation for skills */
 
 @keyframes expand {
@@ -340,14 +356,18 @@ h1 {
 
 
 /* Contact Me Section */
+
 .contact-section {
     height: fit-content;
     background-color: black;
     color: white;
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
-    align-items: center;
     margin-top: 5em;
+}
+
+.footer-grid-practice {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    align-items: center;
 }
 
 .contact-call {
@@ -376,4 +396,70 @@ h1 {
     transform: scale(1.05);
 }
 
+.email-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.email-wrapper.hidden {
+    display: none;
+}
+
+.contact-form-h1.hidden {
+    display: none;
+}
+
+.contact-form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 5em;
+}
+
+.contact-form-label {
+    margin-top: 1em;
+    font-size: larger;
+}
+
+.contact-form-email {
+    height: 2em;
+    width: 40%;
+    border-radius: 0.5em;
+}
+
+.contact-form-message {
+    height: 10em;
+    border-radius: 0.25em;
+
+}
+
+.contact-form-bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.contact-form-button {
+    width: 20%;
+    margin-right: 3em;
+    background-color: white;
+    color: black;
+}
+
+.contact-form-warning {
+    font-size: larger;
+}
+
+.warning-box {
+    border: 2px solid red;
+    transition: border 0.2s ease;
+}
+
+.warning-text {
+    color:red;
+    transition: color 0.2s ease;
+}

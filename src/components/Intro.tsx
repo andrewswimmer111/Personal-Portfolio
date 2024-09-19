@@ -2,7 +2,7 @@ const Intro: React.FC = () => {
     return (
         <div id="About Me" className="intro-container">
             <div className="intro-photo-container">
-                <img src="/public/images/head.JPG" className="profile-picture" alt="Profile Picture"></img>
+                <img src="/images/head.jpg" className="profile-picture" alt="Profile Picture"></img>
             </div>
             <div className="intro-text"> 
                 <h1> Andrew Li </h1>
