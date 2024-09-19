@@ -7,7 +7,7 @@ const Extracurriculars:React.FC = () => {
         {
             title: "Testing",
             description: "I'm testing right now",
-            imageURL: "/images/head.jpg",
+            imageURLs: ["/images/head.jpg", "/images/food.png"],
         }
     ]
 
@@ -34,7 +34,7 @@ const Extracurriculars:React.FC = () => {
                         key={index}
                         title={extra.title}
                         description={extra.description}
-                        imageURL={extra.imageURL}
+                        imageURLs={extra.imageURLs}
                     />
                 ))}
             </div>
