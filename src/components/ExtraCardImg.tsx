@@ -29,7 +29,7 @@ const ExtraCardImg:React.FC<ExtraCardImgProps> = ( {title, description, imageURL
             </div>
             <div className="extra-content-img">
                 <div className="extra-title"> {title} </div>
-                <div className="extra-body">{description}</div>
+                <div className="extra-body" dangerouslySetInnerHTML={{ __html: description }}></div>
             </div>
         </div>
     )
