@@ -6,9 +6,9 @@ const Skills:React.FC = () => {
       {
         categoryName: "(Hover to see descriptions)",
         skills: [
-          {name: "Proficient", proficiency: "", description: "Has deep knowledge, extensive experience, and can troubleshoot complex problems"},
+          {name: "Proficient", proficiency: "", description: "Has deep knowledge, extensive experience, and can solve complex problems"},
           {name: "Intermediate", proficiency: "", description: "Has both solid understanding and experience in more complex tasks"},
-          {name: "Basic", proficiency: "", description: "Understands core concepts and fundamental principles, and is able to complete tasks independently"},
+          {name: "Basic", proficiency: "", description: "Understands core concepts and fundamentals, and is able to complete tasks independently"},
           {name: "Novice", proficiency: "", description: "Able to complete simple tasks with guidance, but only has functional knowledge"},
         ]
       }
