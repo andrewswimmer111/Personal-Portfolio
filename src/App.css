@@ -360,8 +360,15 @@ h1 {
 }
 
 @media (max-width: 900px) {
-    /* Just go to two lines here */
-
+    .skill-category.keyData .skill-cards-line {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    .skill-block.keyData {
+        width: 250px; 
+        height: 150px;
+    }
 }
 
 
@@ -571,6 +578,9 @@ h1 {
     }
     .extra-card {
         height: fit-content;
+    }
+    .skill-cards-line {
+        justify-content: center;
     }
 
 }
