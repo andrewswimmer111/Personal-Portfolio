@@ -51,13 +51,14 @@ function ContactForm() {
         }
 
         else if (email.value.trim() && message.value.trim()) {
-            setError("")
+            setError("Form submitting...");
+            document.getElementById('contact-form-submit')?.classList.add('disabled');
             handleSubmit(event);
         }
     };
 
   return (
-    <form onSubmit={handleFormSubmit} className='contact-form-box'>
+    <form id="contact-form" onSubmit={handleFormSubmit} className='contact-form-box'>
       <label htmlFor="email" className='contact-form-label'>
         Email Address
       </label>
@@ -86,7 +87,7 @@ function ContactForm() {
         errors={state.errors}
       />
       <div className='contact-form-bottom'>
-        <button type="submit" disabled={state.submitting} className='contact-form-button'>
+        <button id="contact-form-submit" type="submit" disabled={state.submitting} className='contact-form-button'>
             Submit
         </button>
         <div id="warning" className='contact-form-warning'> {error} </div>

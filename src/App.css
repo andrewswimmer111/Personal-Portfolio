@@ -216,6 +216,7 @@ h1 {
     border: 5px solid black;
     border-radius: 0.25em;
     flex-grow: 1;
+    cursor: pointer;
 }
 
 .extra-image-container:hover {
@@ -236,7 +237,7 @@ h1 {
 }
 
 .extra-card {
-    width: 20em;
+    width: 40em;
     margin: 1em auto;
     padding: 1em;
     border: 1px solid #ccc;
@@ -472,6 +473,11 @@ h1 {
     margin-right: 3em;
     background-color: white;
     color: black;
+}
+
+.contact-form-button.disabled {
+    background-color: pink;
+    color: gray;
 }
 
 .contact-form-warning {
