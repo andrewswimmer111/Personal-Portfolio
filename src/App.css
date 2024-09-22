@@ -555,6 +555,9 @@ h1 {
     .extra-content-img {
         width: 90%;
     }
+    .contact-form-box {
+        width: 90%;
+    }
 }
  
 @media (max-width: 650px) {
@@ -581,6 +584,33 @@ h1 {
     }
     .skill-cards-line {
         justify-content: center;
+    }
+
+    .footer-grid-practice {
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+    .contact-call {
+        font-size: 1.75rem;
+        margin-left: 0;
+        grid-column: span 2;
+    }
+    .contact-column {
+        margin-top: 0;
+    }
+    .contact-form-email {
+        width: 75%;
+    }
+    .contact-form-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact-form-button {
+        margin: 0;
+        width: 70%;
+    }
+    .contact-form-warning {
+        margin-top: 1em;
     }
 
 }
