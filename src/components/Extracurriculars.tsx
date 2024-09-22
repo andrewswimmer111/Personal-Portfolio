@@ -14,7 +14,7 @@ const Extracurriculars:React.FC = () => {
     const extra = [
         {
             title: "Teaching Assistant",
-            description: `When I’m excited about something, I want others to feel that excitement too. That’s why I work as a TA for CS101—so I can share my passion for programming with students. Whether it’s during lab sessions or office hours, I always strive to provide clear explanations that empower students to build their confidence in the material. <br/> <br/> In addition to my role as a TA, I’m actively involved in several other mentorship positions on campus. For instance, I serve as a Blue Devil Buddy, where I provide guidance and support to an incoming first-year student.`,
+            description: `When I’m excited about something, I want others to feel that excitement too. That’s why I work as a TA for CS101—so I can share my passion for programming with students. Whether it’s during lab sessions or office hours, I always strive to provide clear explanations that help students build confidence in the material. <br/> <br/> In addition to my role as a TA, I’m actively involved in several other mentorship positions on campus. For instance, I serve as a Blue Devil Buddy, where I provide guidance and support to an incoming first-year student.`,
         },
         {
             title: "ACE Participant",

@@ -14,7 +14,8 @@ h1 {
 /* Header */
 
 .header {
-    height: 10vh;
+    height: fit-content;
+    min-height: fit-content;
     background-color: #586BA4;
     display: flex;
     align-items: center;
@@ -30,7 +31,8 @@ h1 {
 .header-nav {
     width: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
     margin-right: 1rem;
 }
 
@@ -492,4 +494,42 @@ h1 {
 .warning-text {
     color:red;
     transition: color 0.2s ease;
+}
+
+
+
+
+/* Responsiveness */
+
+
+/* Tablet */
+
+
+
+@media (min-width: 961px) and (max-width: 1024px) {
+
+}
+
+@media (max-width: 1000px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header-name {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .header-nav {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+}
+ 
+@media (max-width: 600px) {
+    .header-nav {
+        display: flex;
+        flex-direction: column;
+    }
 }

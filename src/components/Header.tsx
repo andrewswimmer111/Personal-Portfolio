@@ -13,7 +13,7 @@ const Header: React.FC = () => {
         <div className="header">
             <h1 className="header-name"> Andrew Li </h1>
             <nav className="header-nav">
-                {['About Me', 'Projects', 'Extracurriculars', 'Skills', 'Contact Me'].map((link) => (
+                {['About', 'Projects', 'Extracurriculars', 'Skills', 'Contact'].map((link) => (
                     <div
                         key={link}
                         className='nav-link'

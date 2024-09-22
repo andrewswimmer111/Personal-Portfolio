@@ -1,6 +1,6 @@
 const Intro: React.FC = () => {
     return (
-        <div id="About Me" className="intro-container">
+        <div id="About" className="intro-container">
             <div className="intro-photo-container">
                 <img src="/images/head.jpg" className="profile-picture" alt="Profile Picture"></img>
             </div>

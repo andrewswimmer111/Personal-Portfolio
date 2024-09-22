@@ -11,7 +11,7 @@ const ContactMe:React.FC = () => {
     };
 
     return (
-        <div id="Contact Me" className="contact-section">
+        <div id="Contact" className="contact-section">
             <div className="footer-grid-practice">
                 <h2 className="contact-call"> Contact me! </h2>
                 <div className="contact-column">
