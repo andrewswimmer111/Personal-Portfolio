@@ -63,10 +63,12 @@ h1 {
 
 .intro-container {
     width: 100%;
-    height: 65vh;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 .intro-photo-container {
@@ -77,6 +79,7 @@ h1 {
     position: relative;
     margin-right: 1rem;
     float: right;
+    margin-left: 1rem;
 }
 
 .profile-picture {
@@ -510,7 +513,7 @@ h1 {
 
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
     .header {
         flex-direction: column;
         justify-content: center;
@@ -524,12 +527,50 @@ h1 {
         width: 100%;
         margin-bottom: 1em;
     }
+    .intro-text h1 {
+        display: none;
+    }
+    .extra-card-img {
+        align-items: center;
+    }
 
 }
+
+@media (max-width: 850px) {
+    .extra-card-img {
+        flex-direction: column;
+    }
+    .extra-image-container {
+        width: 90%;
+        margin-right: 0;
+        margin-bottom: 2em;
+    }
+    .extra-content-img {
+        width: 90%;
+    }
+}
  
-@media (max-width: 600px) {
+@media (max-width: 650px) {
+    h1 {
+        font-size: 2.7em;
+    }
+
     .header-nav {
         display: flex;
         flex-direction: column;
     }
+    .intro-container {
+        flex-direction: column;
+    }
+    .intro-text {
+        text-align: center;
+        width: 90%;
+    }
+    .project-card {
+        height: fit-content;
+    }
+    .extra-card {
+        height: fit-content;
+    }
+
 }
