@@ -1,8 +1,4 @@
 /* Global */
-hr {
-
-}
-
 h1 {
     text-align: center;
 }
@@ -16,7 +12,8 @@ h1 {
 .header {
     height: fit-content;
     min-height: fit-content;
-    background-color: #586BA4;
+    background-color: #242424;
+    color: #8C9DD0;
     display: flex;
     align-items: center;
 }
@@ -48,15 +45,10 @@ h1 {
 }
 
 .nav-link:hover {
-    background-color: #435a77;
+    background-color: black;
     transform: scale(1.05);
-
 }
 
-.nav-link.active {
-    background-color: #f9f9f9;
-    color: #000000;
-}
 
 
 /* Intro */
@@ -74,7 +66,7 @@ h1 {
 .intro-photo-container {
     height: 50vh;
     border-radius: 50%;
-    border: 5px solid black;
+    border: 5px solid #242424;
     overflow: hidden;
     position: relative;
     margin-right: 1rem;
@@ -169,7 +161,7 @@ h1 {
     position: relative;
     margin-bottom: 1em;
     border-radius: 0.25em;
-    border: 3px solid #AA6373;
+    border: 3px solid #8C9DD0;
     overflow: hidden;
 }
 
@@ -218,7 +210,7 @@ h1 {
     padding-top: 44.4%;
     margin-right: 2.5em;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 5px solid black;
+    border: 5px solid ;
     border-radius: 0.25em;
     flex-grow: 1;
     cursor: pointer;
@@ -301,6 +293,7 @@ h1 {
     height: 7vh;
     min-height: fit-content;
     background-color: #AA6373;
+    color: whitesmoke;
     padding: 1em;
     border-radius: 10px;
     margin: 1em;
@@ -396,8 +389,8 @@ h1 {
 
 .contact-section {
     height: fit-content;
-    background-color: black;
-    color: white;
+    background-color: #242424;
+    color: #98A5CC;
     margin-top: 5em;
 }
 
@@ -423,7 +416,7 @@ h1 {
 }
 
 .contact-column a {
-    color: whitesmoke;
+    color: #98A5CC;
     font-size: large;
     transition: transform 0.3s ease;
 }

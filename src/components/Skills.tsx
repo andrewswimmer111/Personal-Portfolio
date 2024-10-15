@@ -4,7 +4,7 @@ const Skills:React.FC = () => {
 
     const keyData = [
       {
-        categoryName: "Hover (or tap for mobile) to see descriptions",
+        categoryName: "(Hover to see descriptions)",
         skills: [
           {name: "Proficient", proficiency: "", description: "Has deep knowledge, extensive experience, and can solve complex problems"},
           {name: "Intermediate", proficiency: "", description: "Has both solid understanding and experience in more complex tasks"},
