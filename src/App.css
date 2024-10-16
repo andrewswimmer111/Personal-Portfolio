@@ -8,6 +8,12 @@ h1 {
     padding-top: 1em;
 }
 
+hr {
+    border: 0; /* Remove the default border */
+    height: 2px; /* Set the desired height */
+    background: linear-gradient(90deg, #98A5CC, #7FB685, #98A5CC); /* Apply the gradient */
+}
+
 /* Header */
 
 .header {

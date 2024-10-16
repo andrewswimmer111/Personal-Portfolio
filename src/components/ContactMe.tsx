@@ -2,7 +2,7 @@ import ContactForm from "./ContactForm"
 
 const ContactMe:React.FC = () => {
 
-    const handleEmailClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    const handleEmailClick = () => {
         document.getElementById("email-form")?.classList.remove("hidden");
         document.getElementById("email-form")?.scrollIntoView({
             behavior: 'smooth',
