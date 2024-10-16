@@ -24,7 +24,6 @@ const ContactMe:React.FC = () => {
                 </div>
             </div>
             <div id="email-form" className="email-wrapper hidden">
-                <h1 id="contact-form-h1" className="contact-form-h1"> Contact Form </h1>
                 <ContactForm/>
             </div>
         </div>

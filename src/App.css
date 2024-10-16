@@ -1,6 +1,7 @@
 /* Global */
 h1 {
     text-align: center;
+    color: #98A5CC;
 }
 
 .section-correction {
@@ -23,6 +24,16 @@ h1 {
     width: 50%;
     padding: 1rem;
     text-align: left;
+    
+    /* For the gradient */
+    background: linear-gradient(90deg, #98A5CC, #7FB685);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* For WebKit browsers */
+    color: transparent; /* For non-WebKit browsers */
+
+    background-size: 30vh 100%; 
+    background-position: left; 
 }
 
 .header-nav {
@@ -66,11 +77,10 @@ h1 {
 .intro-photo-container {
     height: 50vh;
     border-radius: 50%;
-    border: 5px solid #242424;
+    padding: 2px;
+    background: linear-gradient(90deg, #98A5CC, #7FB685);
     overflow: hidden;
-    position: relative;
     margin-right: 1rem;
-    float: right;
     margin-left: 1rem;
 }
 
@@ -84,19 +94,11 @@ h1 {
 .intro-text {
     width: 50%; 
     padding: 0 2rem;
+    color: #dfe5f7;
 }
 
 .intro-text h1 {
-    text-align: left;
-}
-
-.intro-button {
-    margin-top: 1rem;
-    background-color: #586BA4;
-}
-
-.intro-button:hover {
-    border-color: #f9f9f9;
+    text-align: left;    
 }
 
 /* Project Cards */
@@ -137,6 +139,7 @@ h1 {
     font-size: 1.25em;
     margin-bottom: 0.5em;
     font-weight: bold;
+    color: #242424;
 }
 
 .project-body {
@@ -161,7 +164,7 @@ h1 {
     position: relative;
     margin-bottom: 1em;
     border-radius: 0.25em;
-    border: 3px solid #8C9DD0;
+    border: 3px solid black;
     overflow: hidden;
 }
 
@@ -272,6 +275,10 @@ h1 {
     align-items: center;
 }
 
+.skills-section h2 {
+    color: #F7F0F0
+}
+
 .skills-grid {
     display: flex;
     flex-direction: column;
@@ -324,7 +331,7 @@ h1 {
 
 
 .skill-category.keyData h2{
-    color: black;
+    color: white;
     text-align: center;
     font-size: 1em;
     margin-top: -1em;
@@ -390,7 +397,7 @@ h1 {
 .contact-section {
     height: fit-content;
     background-color: #242424;
-    color: #98A5CC;
+    color: #B3ECA1;
     margin-top: 5em;
 }
 
@@ -416,7 +423,7 @@ h1 {
 }
 
 .contact-column a {
-    color: #98A5CC;
+    color: #B3ECA1;
     font-size: large;
     transition: transform 0.3s ease;
 }
@@ -424,6 +431,7 @@ h1 {
 .contact-column a:hover {
     text-decoration: underline;
     transform: scale(1.05);
+    color: #D0F1B2
 }
 
 .email-wrapper {
@@ -435,10 +443,6 @@ h1 {
 }
 
 .email-wrapper.hidden {
-    display: none;
-}
-
-.contact-form-h1.hidden {
     display: none;
 }
 
@@ -504,15 +508,6 @@ h1 {
 
 /* Responsiveness */
 
-
-/* Tablet */
-
-
-
-@media (min-width: 961px) and (max-width: 1024px) {
-
-}
-
 @media (max-width: 1050px) {
     .header {
         flex-direction: column;
@@ -522,6 +517,8 @@ h1 {
         margin: 0;
         width: 100%;
         text-align: center;
+
+        background-size: 100% 100%; 
     }
     .header-nav {
         width: 100%;

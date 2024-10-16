@@ -5,7 +5,7 @@ const Projects: React.FC = () => {
     const projects = [
         {
             title: "Community Capital",
-            description: "When families move to a new neighborhood, finding nearby community resources can be challenging. To address this, I worked with a team of five other students through the Duke Code+ summer program, developing a website that visualizes public schools and surrounding resources (which are curated by community leaders). While the current site only covers Durham County in North Carolina, this semester, I’m working as a Student Developer Intern for Duke OIT to help expand the website to other counties and to make additional improvements.",
+            description: "When families move to a new neighborhood, finding nearby community resources can be challenging. To address this, I worked with a team of five other students through the Duke Code+ summer program, developing a website that visualizes public schools and surrounding resources (which are curated by community leaders). The current site only covers Durham County in North Carolina, so this semester, I’m working as a Student Developer Intern for Duke OIT to help expand the website to other counties while making additional improvements.",
             imageURL: "/images/community.png",
             projectLink: "https://community-capital-test.oit.duke.edu/",
         },
