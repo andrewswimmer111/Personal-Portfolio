@@ -8,7 +8,8 @@ interface ExtraCardImgProps {
 
 const ExtraCardImg:React.FC<ExtraCardImgProps> = ( {title, description, imageURLs}) => {
 
-    const [index, setIndex] = useState(0);
+    let startIndex = Math.floor(Math.random() * imageURLs.length)
+    const [index, setIndex] = useState(startIndex);
     
     const handleImageClick = () => {
         if (index === imageURLs.length - 1) {
