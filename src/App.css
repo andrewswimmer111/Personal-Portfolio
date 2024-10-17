@@ -403,7 +403,7 @@ hr {
 .contact-section {
     height: fit-content;
     background-color: #242424;
-    color: #B3ECA1;
+    color: #98A5CC;
     margin-top: 5em;
 }
 
@@ -429,7 +429,7 @@ hr {
 }
 
 .contact-column a {
-    color: #B3ECA1;
+    color: #98A5CC;
     font-size: large;
     transition: transform 0.3s ease;
 }
@@ -491,7 +491,7 @@ hr {
 }
 
 .contact-form-button.disabled {
-    background-color: pink;
+    background-color: #7FB685;
     color: gray;
 }
 
