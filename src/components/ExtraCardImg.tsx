@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 interface ExtraCardImgProps {
     title: string,
@@ -10,14 +10,34 @@ const ExtraCardImg:React.FC<ExtraCardImgProps> = ( {title, description, imageURL
 
     let startIndex = Math.floor(Math.random() * imageURLs.length)
     const [index, setIndex] = useState(startIndex);
+    const intervalRef = useRef<number | null>(null);
+
+    const startInterval = () => {
+        intervalRef.current = window.setInterval(() => {
+            setIndex((prevIndex) => (prevIndex === imageURLs.length - 1 ? 0 : prevIndex + 1));
+        }, 7000); // 7 seconds
+    };
     
+    useEffect(() => {
+        const preloadImages = () => {
+            imageURLs.forEach((url) => {
+                const img = new Image();
+                img.src = url;
+            });
+        };
+        preloadImages();
+    }, []); 
+
+    useEffect(() => {
+        startInterval();
+        return () => clearInterval(intervalRef.current!);
+    }, []); 
+
+
     const handleImageClick = () => {
-        if (index === imageURLs.length - 1) {
-            setIndex(0);
-        }
-        else {
-            setIndex(index + 1);
-        }
+        setIndex((prevIndex) => (prevIndex === imageURLs.length - 1 ? 0 : prevIndex + 1));
+        clearInterval(intervalRef.current!);
+        startInterval();
     }
 
     return (
