@@ -10,6 +10,11 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --bg1: #343A40;
+  --bg2: #2B3035;
+  --bg3: #212529;
+  --main: #F9F9F9;
 }
 
 a {
@@ -26,7 +31,8 @@ body {
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
-  background: linear-gradient(180deg, #3a3a3a, #2E3A4D, #3a3a3a); /* A bit more contrast */
+  /* background: linear-gradient(180deg, #3a3a3a, #2E3A4D, #3a3a3a); A bit more contrast */
+  background: linear-gradient(180deg, var(--bg1), var(--bg2), var(--bg1));
 }
 
 h1 {

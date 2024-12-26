@@ -1,12 +1,15 @@
 import { useState, useEffect, useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
 interface ExtraCardImgProps {
     title: string,
     description: string,
     imageURLs: string[],
+    link: string,
 }
 
-const ExtraCardImg:React.FC<ExtraCardImgProps> = ( {title, description, imageURLs}) => {
+const ExtraCardImg:React.FC<ExtraCardImgProps> = ( {title, description, imageURLs, link}) => {
 
     let startIndex = Math.floor(Math.random() * imageURLs.length)
     const [index, setIndex] = useState(startIndex);
@@ -33,7 +36,6 @@ const ExtraCardImg:React.FC<ExtraCardImgProps> = ( {title, description, imageURL
         return () => clearInterval(intervalRef.current!);
     }, []); 
 
-
     const handleImageClick = () => {
         setIndex((prevIndex) => (prevIndex === imageURLs.length - 1 ? 0 : prevIndex + 1));
         clearInterval(intervalRef.current!);
@@ -49,7 +51,18 @@ const ExtraCardImg:React.FC<ExtraCardImgProps> = ( {title, description, imageURL
                 ></img>
             </div>
             <div className="extra-content-img">
-                <div className="extra-title"> {title} </div>
+            {
+                link === "" ? 
+                <div className="extra-title-img"> {title} </div> :
+                <a href={link} 
+                    className="extra-title-img" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                > 
+                    {title} 
+                    <FontAwesomeIcon icon={faExternalLinkAlt} style={{ fontSize: "0.6em", marginBottom: "0.1em"}}/> 
+                </a> 
+            }
                 <div className="extra-body" dangerouslySetInnerHTML={{ __html: description }}></div>
             </div>
         </div>

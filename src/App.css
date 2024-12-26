@@ -1,7 +1,16 @@
+/* Color definitons */
+:root {
+    --bg1: #343A40;
+    --bg2: #2B3035;
+    --bg3: #212529;
+    --main: #F9F9F9;
+}
+
+
 /* Global */
 h1 {
     text-align: center;
-    color: #98A5CC;
+    color: var(--main);
 }
 
 .section-correction {
@@ -11,7 +20,8 @@ h1 {
 hr {
     border: 0; /* Remove the default border */
     height: 2px; /* Set the desired height */
-    background: linear-gradient(90deg, #98A5CC, #7FB685, #98A5CC); /* Apply the gradient */
+    /* background: linear-gradient(90deg, #98A5CC, #7FB685, #98A5CC); Apply the gradient */
+    background: var(--main);
 }
 
 /* Header */
@@ -19,8 +29,8 @@ hr {
 .header {
     height: fit-content;
     min-height: fit-content;
-    background-color: #242424;
-    color: #8C9DD0;
+    background-color: var(--bg3);
+    color: var(--main);
     display: flex;
     align-items: center;
 }
@@ -30,16 +40,6 @@ hr {
     width: 50%;
     padding: 1rem;
     text-align: left;
-    
-    /* For the gradient */
-    background: linear-gradient(90deg, #98A5CC, #7FB685);
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* For WebKit browsers */
-    color: transparent; /* For non-WebKit browsers */
-
-    background-size: 30vh 100%; 
-    background-position: left; 
 }
 
 .header-nav {
@@ -62,10 +62,9 @@ hr {
 }
 
 .nav-link:hover {
-    background-color: black;
+    background-color: var(--bg3);
     transform: scale(1.05);
 }
-
 
 
 /* Intro */
@@ -84,7 +83,8 @@ hr {
     height: 50vh;
     border-radius: 50%;
     padding: 2px;
-    background: linear-gradient(90deg, #98A5CC, #7FB685);
+    /* background: linear-gradient(90deg, #98A5CC, #7FB685); */
+    background: var(--bg3);
     overflow: hidden;
     margin-right: 1rem;
     margin-left: 1rem;
@@ -100,7 +100,7 @@ hr {
 .intro-text {
     width: 50%; 
     padding: 0 2rem;
-    color: #dfe5f7;
+    color: var(--main);
 }
 
 .intro-text h1 {
@@ -113,43 +113,42 @@ hr {
     height: fit-content;
 }
 
-
 .project-grid {
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
 }
 
 .project-card {
-    width: 40em;
+    width: 26em;
     margin: 1em auto;
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 0.5em;
     box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    background-color: var(--main);
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    margin-left: 1em;
-    margin-right: 1em;
-    height: 75vh;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    height: 60vh;
     margin-bottom: 3em;
 }
 
 .project-title {
-    font-size: 1.25em;
+    font-size: 1.5em;
     margin-bottom: 0.5em;
     font-weight: bold;
-    color: #242424;
+    color: var(--bg3);
 }
 
 .project-body {
-    font-size: 1em;
+    font-size: 1.1em;
     margin: 0.5em 0;
 }
 
@@ -170,7 +169,7 @@ hr {
     position: relative;
     margin-bottom: 1em;
     border-radius: 0.25em;
-    border: 3px solid black;
+    border: 3px solid var(--bg3);
     overflow: hidden;
 }
 
@@ -198,13 +197,13 @@ hr {
 }
 
 .extra-card-img {
-    width: 69em;
+    width: 59em;
     margin: 1em auto;
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 0.5em;
     box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
+    background-color: var(--main);
     display: flex;
     align-items: flex-start;
 
@@ -243,31 +242,36 @@ hr {
 }
 
 .extra-card {
-    width: 40em;
+    width: 20em;
     margin: 1em auto;
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 0.5em;
     box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    background-color: var(--main);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
-    margin-left: 1em;
-    margin-right: 1em;
-    height: 50vh;
+    margin-left: .5em;
+    margin-right: .5em;
+    height: 32vh;
     margin-bottom: 3em;
 }
 
-.extra-title {
-    font-size: 2em;
+.extra-title, .extra-title-img {
+    font-size: 1.5em;
     margin-bottom: 0.5em;
     font-weight: bold;
+    color: var(--bg3);
+}
+
+.extra-title-img {
+    font-size: 2em;
 }
 
 .extra-body {
-    font-size: 1.25em;
+    font-size: 1.1em;
 }
 
 
@@ -306,7 +310,7 @@ hr {
     height: 7vh;
     min-height: fit-content;
     background-color: #AA6373;
-    color: whitesmoke;
+    color: var(--main);
     padding: 1em;
     border-radius: 10px;
     margin: 1em;
@@ -337,7 +341,7 @@ hr {
 
 
 .skill-category.keyData h2{
-    color: white;
+    color: var(--main);
     text-align: center;
     font-size: 1em;
     margin-top: -1em;
@@ -354,7 +358,7 @@ hr {
     background-color: #435a77;
     width: 20%;
     min-width: 125px;
-    color: white;
+    color: var(--main);
     flex: 1 1 auto;
 }
 
@@ -469,12 +473,13 @@ hr {
     height: 2em;
     width: 40%;
     border-radius: 0.5em;
+    border: 2px solid transparent;
 }
 
 .contact-form-message {
     height: 10em;
     border-radius: 0.25em;
-
+    border: 2px solid transparent;
 }
 
 .contact-form-bottom {
@@ -486,8 +491,8 @@ hr {
 .contact-form-button {
     width: 20%;
     margin-right: 3em;
-    background-color: white;
-    color: black;
+    background-color: var(--main);
+    color: var(--bg3);
 }
 
 .contact-form-button.disabled {
