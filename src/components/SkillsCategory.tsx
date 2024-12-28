@@ -5,15 +5,13 @@ type SkillCategoryProps = {
     skills: {
         name: string,
         proficiency: string,
-        description?: string,
     }[];
-    styleType: 'keyData' | 'skillData';
 }
 
-const SkillsCategory:React.FC<SkillCategoryProps> = ({category, skills, styleType}) => {    
+const SkillsCategory:React.FC<SkillCategoryProps> = ({category, skills}) => {    
 
     return (
-        <div className={`skill-category ${styleType}`}>
+        <div className={`skill-category skillData`}>
             <h2>{category}</h2>
             <div className="skill-cards-line">
                 {skills.map((skill, index) => (
@@ -21,8 +19,7 @@ const SkillsCategory:React.FC<SkillCategoryProps> = ({category, skills, styleTyp
                         key={index} 
                         skillName={skill.name}
                         proficiency={skill.proficiency} 
-                        description={skill.description}
-                        style={styleType}
+                        style='skillData'
                     />
                 ))}
             </div>

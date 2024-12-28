@@ -1,18 +1,25 @@
 import SkillsCategory from "./SkillsCategory";
+import SkillFilter from "./SkillFilter";
+import { useState } from "react";
 
 const Skills:React.FC = () => {
 
-    const keyData = [
+  const [selectedFilter, setSelectedFilter] = useState<string | null>(null);
+
+  const filterData = [
       {
-        categoryName: "(Hover to see descriptions)",
-        skills: [
-          {name: "Proficient", proficiency: "", description: "Has deep knowledge, extensive experience, and can solve complex problems"},
-          {name: "Intermediate", proficiency: "", description: "Has both solid understanding and experience in more complex tasks"},
-          {name: "Basic", proficiency: "", description: "Understands core concepts and fundamentals, and is able to complete tasks independently"},
-          {name: "Novice", proficiency: "", description: "Able to complete simple tasks with guidance, but only has functional knowledge"},
-        ]
-      }
-    ]
+          level: "Intermediate",
+          description: "Has both solid understanding and experience in more complex tasks",
+      },
+      {
+          level: "Basic",
+          description: "Understands core concepts and is able to complete tasks independently",
+      },
+      {
+          level: "Novice",
+          description: "Able to complete simple tasks with guidance, but only has functional knowledge",
+      },
+  ];
 
     const skillData = [
         {
@@ -49,26 +56,29 @@ const Skills:React.FC = () => {
         }
     ];
 
+    const filteredSkills = selectedFilter
+        ? skillData.map((category) => ({
+              ...category,
+              skills: category.skills.filter((skill) => skill.proficiency === selectedFilter),
+          })).filter((category) => category.skills.length > 0)
+        : skillData;
+
     return (
         <div id="Skills" className="skills-section section-correction">
             <h1> Skills</h1>
             <div className="skills-grid">
+              <div className="filter-instructions"> (Click to filter) </div>
+              <SkillFilter
+                  selectedFilter={selectedFilter}
+                  onFilterChange={setSelectedFilter}
+                  filterData = {filterData}
+              />
 
-                {keyData.map((category, index) => (
-                  <SkillsCategory 
-                    key={index}
-                    category={category.categoryName}
-                    skills={category.skills}
-                    styleType="keyData"
-                  />
-                ))}
-
-                {skillData.map((category, index) => (
+                {filteredSkills.map((category, index) => (
                     <SkillsCategory 
                         key={index}
                         category={category.categoryName}
                         skills={category.skills}
-                        styleType="skillData"
                     />
                 ))}
             </div>
