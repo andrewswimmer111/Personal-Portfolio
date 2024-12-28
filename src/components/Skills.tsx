@@ -37,8 +37,8 @@ const Skills:React.FC = () => {
           skills: [
             { name: "React", proficiency: "Intermediate" },
             { name: "Ruby on Rails", proficiency: "Intermediate" },
+            { name: "React Native", proficiency: "Basic" },
             { name: "TailwindCSS", proficiency: "Basic" },
-            { name: "BootStrapCSS", proficiency: "Basic" },
             { name: "HTML Canvas", proficiency: "Basic" },
             { name: "Express.js", proficiency: "Novice" },
         ]

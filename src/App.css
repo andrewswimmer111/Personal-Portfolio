@@ -329,12 +329,12 @@ hr {
 
 .skill-clarification {
     overflow: hidden;
-    transition: max-height .3s ease-in; 
+    transition: max-height .2s ease-in; 
     text-align: center;
 }
 
 .skill-clarification.visible {
-    max-height: 10vh; 
+    max-height: 11vh; 
     overflow: hidden;
 }
 
@@ -347,7 +347,7 @@ hr {
 }
 
 .skill-filter-grid .skill-cards-line {
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: nowrap;
     gap: 1em;
 }
@@ -378,27 +378,35 @@ hr {
 @media (max-width: 1200px) {
     .skill-block.filter {
         width: 18%; 
-        height: 21vh;
+        height: 24vh;
     }
 }
 
 @media (max-width: 900px) {
     .skill-cards-line {
-        justify-content: space-between;
+        justify-content: flex-start;
         flex-wrap: wrap;
         gap: 1em;
     }
     .skill-filter-grid {
-        justify-content: space-between;
+        justify-content: flex-start;
         flex-wrap: wrap;
         gap: 1em;
     }
-    .skill-block.keyData {
-        width: 250px; 
+    .skill-block.filter {
+        width: 200px; 
         height: 150px;
     }
 }
 
+@media (max-width: 450px) {
+    .skill-block.filter h2 {
+        font-size: 1em;
+    }
+    .skill-block.filter {
+        height: 100px;
+    }
+}
 
 /* Animation for skills */
 
