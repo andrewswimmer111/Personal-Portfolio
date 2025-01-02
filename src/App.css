@@ -516,7 +516,7 @@ a {
 }
 
 .email-wrapper.visible {
-    height: auto;
+    height: 50vh;
 }
 
 .contact-form-box {

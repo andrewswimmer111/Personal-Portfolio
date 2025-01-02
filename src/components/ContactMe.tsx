@@ -4,6 +4,7 @@ import ContactForm from "./ContactForm"
 const ContactMe:React.FC = () => {
 
     const [showForm, setShowForm] = useState(false)
+    let i = 0
 
     const handleEmailClick = () => {
         const form = document.getElementById("email-form");
@@ -12,6 +13,16 @@ const ContactMe:React.FC = () => {
             if (!showForm) {
                 setShowForm(true);
                 form.classList.add("visible");
+
+                if (i === 0) {
+                    setTimeout(() => {
+                        form.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start',
+                        });
+                        i++;
+                    }, 200);
+                }
                 
             } else {
                 setShowForm(false);
