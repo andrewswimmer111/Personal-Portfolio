@@ -4,6 +4,7 @@ import { useState, useRef } from 'react';
 function ContactForm() {
     const [state, handleSubmit] = useForm("mrbzvwwn");
     const [error, setError] = useState("");
+    
     let firstCheck = useRef(0);
     let firstTime = useRef(0);
 

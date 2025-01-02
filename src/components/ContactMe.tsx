@@ -1,13 +1,25 @@
+import { useState } from "react";
 import ContactForm from "./ContactForm"
 
 const ContactMe:React.FC = () => {
 
+    const [showForm, setShowForm] = useState(false)
+
     const handleEmailClick = () => {
-        document.getElementById("email-form")?.classList.remove("hidden");
-        document.getElementById("email-form")?.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start', 
-        });
+        const form = document.getElementById("email-form");
+        if (form) {
+
+            if (!showForm) {
+                setShowForm(true);
+                form.classList.add("visible");
+                
+            } else {
+                setShowForm(false);
+                form.classList.remove("visible");
+
+            }
+            
+        }
     };
 
     return (

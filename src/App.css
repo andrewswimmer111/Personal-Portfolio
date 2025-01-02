@@ -21,6 +21,8 @@
     --bg1: #1A1A2E;     /* Deep navy for the main background */
     --bg2: #2E3A59;     /* Slightly lighter navy for sections */
     --bg3: #44577C;     /* Muted blue-gray for cards or containers */
+    --bg3-light: #566D8F; /* Lighter variant for cards */
+    --bg3-dark: #3B4E6D; /* Darker variant for cards */
     --main: #F5F5F5;    /* Off-white for text and primary content */
 }
 
@@ -50,7 +52,7 @@ a {
 .header {
     height: fit-content;
     min-height: fit-content;
-    background-color: var(--bg3);
+    background-color: var(--bg2);
     color: var(--main);
     display: flex;
     align-items: center;
@@ -270,7 +272,7 @@ a {
     padding: 1em;
     border-radius: 0.5em;
     box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
-    background-color: var(--bg3);
+    background-color: var(--bg3-dark);
     color: var(--main);
     display: flex;
     flex-direction: column;
@@ -387,7 +389,7 @@ a {
 .skill-block.filter {
     text-align: center;
     height: 15vh;
-    background-color: var(--bg3);
+    background-color: var(--bg3-light);
     width: 20%;
     min-width: 125px;
     color: var(--main);
@@ -465,7 +467,7 @@ a {
 
 .contact-section {
     height: fit-content;
-    background-color: var(--bg3);
+    background-color: var(--bg2);
     color: var(--main);
     margin-top: 5em;
 }
@@ -508,10 +510,13 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    height: 0;
 }
 
-.email-wrapper.hidden {
-    display: none;
+.email-wrapper.visible {
+    height: auto;
 }
 
 .contact-form-box {

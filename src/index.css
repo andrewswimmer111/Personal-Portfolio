@@ -10,11 +10,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  --bg1: #343A40;
-  --bg2: #2B3035;
-  --bg3: #212529;
-  --main: #F9F9F9;
 }
 
 a {
