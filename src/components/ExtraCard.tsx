@@ -17,7 +17,7 @@ const ExtraCard:React.FC<ExtraCardProps> = ( {title, description, link}) => {
                 link === "" ? 
                 <div className="extra-title"> {title} </div> :
                 <a href={link} 
-                    className="extra-title" 
+                    className="extra-title link" 
                     target="_blank" 
                     rel="noopener noreferrer"
                 > 

@@ -1,29 +1,126 @@
-/* Color definitons */
-:root {
-    --accent1: yellow;
-    --bg1: #343A40;
-    --bg2: #2B3035;
-    --bg3: #212529;
-    --main: #F9F9F9;
-}
 
-:root {
-    --accent1: #1D3461;
-    --bg1: #87677B;
-    --bg2: #87677B;
-    --bg3: #9A7AA0;
-    --main: #F5F3F5;
-}
+/* Color choices */
 
+/* Blue */
 :root {
     --accent1: #98A5CC; /* Soft blue for headers and highlights */
-    --accent2: #FFD700; /* Warm coral for secondary accents */
+    --accent2: #FFD700; /* Yellow to contrast bg3 for link hovers */
     --bg1: #1A1A2E;     /* Deep navy for the main background */
-    --bg2: #2E3A59;     /* Slightly lighter navy for sections */
+    --bg2: #2E3A59;     /* Slightly lighter navy for header, footer, and gradient backgrounds */
     --bg3: #44577C;     /* Muted blue-gray for cards or containers */
     --bg3-light: #566D8F; /* Lighter variant for cards */
-    --bg3-dark: #3B4E6D; /* Darker variant for cards */
     --main: #F5F5F5;    /* Off-white for text and primary content */
+}
+
+/* Purple */
+:root {
+    --accent1: #A288C2; /* Lavender for headers and highlights */
+    --accent2: #FFCC80; /* Warm peach for link hovers */
+    --bg1: #201C2B;     /* Deep plum for the main background */
+    --bg2: #2E2740;     /* Slightly lighter plum for gradients */
+    --bg3: #413657;     /* Muted purple-gray for cards */
+    --bg3-light: #54496D; /* Lighter purple for variation */
+    --main: #EDE7F6;    /* Soft lavender-gray for text and content */
+}
+
+/* Modern (gray/coral) */
+:root {
+    --accent1: #FF6B6B; /* Vibrant coral for headers and highlights */
+    --accent2: #4ECDC4; /* Teal for link hovers */
+    --bg1: #222831;     /* Dark gray for the main background */
+    --bg2: #393E46;     /* Medium gray for header and footer */
+    --bg3: #444B54;     /* Distinct gray for cards with contrast */
+    --bg3-light: #555D68; /* Slightly lighter variant for cards */
+    --main: #FFFFFF;    /* Crisp white for text and content */
+}
+
+/* Brown */
+:root {
+    --accent1: #8C7A5E; /* Warm beige for headers and highlights */
+    --accent2: #D9B44A; /* Goldenrod for link hovers */
+    --bg1: #1C1B18;     /* Deep espresso for the main background */
+    --bg2: #2F2B26;     /* Slightly lighter espresso for gradients */
+    --bg3: #463D38;     /* Muted brown for cards with more contrast */
+    --bg3-light: #5A514B; /* Slightly lighter variant for cards */
+    --main: #F4EDE4;    /* Creamy white for text and content */
+}
+
+/* Dark and neon */
+:root {
+    --accent1: #00ADB5; /* Cool cyan for headers and highlights */
+    --accent2: #FF5722; /* Bold orange for link hovers */
+    --bg1: #121212;     /* Jet black for the main background */
+    --bg2: #1F1F1F;     /* Slightly lighter black for gradients */
+    --bg3: #2C2C2C;     /* Neutral dark gray for cards */
+    --bg3-light: #3E3E3E; /* Lighter gray for distinct contrast */
+    --main: #E0E0E0;    /* Light gray for text and content */
+}
+
+/* Cotton candy */
+:root {
+    --accent1: #F48FB1; /* Cheerful pink for headers and highlights */
+    --accent2: #81C784; /* Refreshing green for link hovers */
+    --bg1: #F5F5F5;     /* Light gray for the main background */
+    --bg2: #E8EAF6;     /* Pastel blue for gradients */
+    --bg3: #D1C4E9;     /* Lavender for cards */
+    --bg3-light: #E6E1F3; /* Lighter variant for cards */
+    --bg3-dark: #B39DDB; /* Darker variant for cards */
+    --main: #212121;    /* Dark gray for text and content */
+}
+
+/* Magenta */
+:root {
+    --accent1: #D77A61; /* Coral red for headers and highlights */
+    --accent2: #F4D35E; /* Mustard yellow for link hovers */
+    --bg1: #2E1F27;     /* Deep maroon for the main background */
+    --bg2: #3E2D38;     /* Slightly lighter maroon for gradients */
+    --bg3: #564D51;     /* Warm taupe for cards */
+    --bg3-light: #6E5F67; /* Lighter taupe for variation */
+    --main: #F5F5F5;    /* Neutral off-white for text and content */
+}
+
+/* Teal */
+:root {
+    --accent1: #008891; /* Deep teal for headers and highlights */
+    --accent2: #F0A500; /* Sun-kissed orange for link hovers */
+    --bg1: #012E40;     /* Navy blue for the main background */
+    --bg2: #013A63;     /* Slightly lighter navy for gradients */
+    --bg3: #046E8F;     /* Muted seafoam green for cards */
+    --bg3-light: #058CAA; /* Brighter seafoam for variation */
+    --main: #E8F1F2;    /* Soft off-white for text and content */
+}
+
+/* Dark w blue highlights */
+:root {
+    --accent1: #6f99cf; /* Steel blue for headers and highlights */
+    --accent2: #98C1D9; /* Lighter blue for link hovers */
+    --bg1: #121212;     /* Almost black for the main background */
+    --bg2: #1F1F1F;     /* Charcoal for gradients */
+    --bg3: #2E2E2E;     /* Mid-gray for cards */
+    --bg3-light: #404040; /* Slightly lighter gray for variation */
+    --main: #F4F4F4;    /* Light gray for text and content */
+}
+
+/* Darker blue (for Duke) */
+:root {
+    --accent1: #4C84C4; /* Brighter Duke Blue for headers and highlights */
+    --accent2: #FFC107; /* Golden yellow for contrast and link hovers */
+    --bg1: #0A1128;     /* Very dark navy for the main background */
+    --bg2: #1B254F;     /* Slightly lighter Duke Blue for header, footer, and gradients */
+    --bg3: #26385E;     /* Muted medium blue for cards or containers */
+    --bg3-light: #375076; /* Lighter blue for variation */
+    --main: #EDEDED;    /* Light gray for text and primary content */
+}
+
+/* Silver */
+:root {
+    --accent1: #8E8D8A; /* Warm taupe for headers and highlights */
+    --accent2: #B8B7B3; /* Light grey for hover and accents */
+    --bg1: #F0F0F0;     /* Off-white background */
+    --bg2: #E0E0E0;     /* Light grey for header/footer */
+    --bg3: #FFFFFF;     /* White for cards and containers */
+    --bg3-light: #F5F5F5; /* Slightly darker white for hover effects */
+    --main: #333333;     /* Charcoal for text */
 }
 
 
@@ -192,7 +289,7 @@ a {
     padding-top: 56.25%;
     position: relative;
     margin-bottom: 1em;
-    border-radius: 0.25em;
+    border-radius: 0.5em;
     border: 3px solid var(--bg3);
     overflow: hidden;
 }
@@ -227,7 +324,7 @@ a {
     /* border: 1px solid #ccc; */
     border-radius: 0.5em;
     box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
-    background-color: var(--bg3);
+    background-color: var(--bg3-light);
     color: var(--main);
     display: flex;
     align-items: flex-start;
@@ -244,7 +341,7 @@ a {
     margin-right: 2.5em;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 5px solid ;
-    border-radius: 0.25em;
+    border-radius: 0.5em;
     flex-grow: 1;
     cursor: pointer;
 }
@@ -272,7 +369,7 @@ a {
     padding: 1em;
     border-radius: 0.5em;
     box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
-    background-color: var(--bg3-dark);
+    background-color: var(--bg3);
     color: var(--main);
     display: flex;
     flex-direction: column;
@@ -291,7 +388,7 @@ a {
     color: var(--main);
 }
 
-.extra-title:hover, 
+.extra-title.link:hover, 
 .extra-title-img:hover {
     color: var(--accent2); 
     text-decoration: underline; /* Example: add underline on hover */
@@ -481,7 +578,6 @@ a {
 .contact-call {
     font-size: 2rem; 
     margin-left: 2em;
-
 }
 
 .contact-column {
@@ -502,6 +598,7 @@ a {
 .contact-column a:hover {
     text-decoration: underline;
     transform: scale(1.05);
+    color: var(--accent2);
 }
 
 .email-wrapper {
