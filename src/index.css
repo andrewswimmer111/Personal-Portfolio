@@ -12,13 +12,154 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+/* Color Schemes */
+
+/* Light (default) */
+:root {
+  --accent1: #8E8D8A; /* Warm taupe for headers and highlights */
+  --accent2: #C7A27C; /* Soft gold for hover and accents */
+  --bg1: #F0F0F0;     /* Off-white background */
+  --bg2: #E0E0E0;     /* Light grey for header/footer */
+  --bg3: #FFFFFF;     /* White for cards and containers */
+  --bg3-light: #F5F5F5; /* Slightly darker white for hover effects */
+  --main: #333333;     /* Charcoal for text */
 }
-a:hover {
-  color: #535bf2;
+
+/* Silver */
+.theme-simple-light {
+  --accent1: #8E8D8A; /* Warm taupe for headers and highlights */
+  --accent2: #C7A27C; /* Soft gold for hover and accents */
+  --bg1: #F0F0F0;     /* Off-white background */
+  --bg2: #E0E0E0;     /* Light grey for header/footer */
+  --bg3: #FFFFFF;     /* White for cards and containers */
+  --bg3-light: #F5F5F5; /* Slightly darker white for hover effects */
+  --main: #333333;     /* Charcoal for text */
+}
+
+/* Silver Dark */
+.theme-simple-dark {
+  --accent1: #C0BEBB; /* Light taupe for headers and highlights */
+  --accent2: #D3A27C; /* Warm gold for hover and accents */
+  --bg1: #1E1E1E;     /* Deep charcoal for the main background */
+  --bg2: #2C2C2C;     /* Slightly lighter charcoal for header/footer */
+  --bg3: #3B3B3B;     /* Dark grey for cards and containers */
+  --bg3-light: #4A4A4A; /* Slightly lighter dark grey for hover effects */
+  --main: #EDEDED;     /* Light grey for text */
+}
+
+/* Teal */
+.theme-teal {
+  --accent1: #008891; /* Deep teal for headers and highlights */
+  --accent2: #F0A500; /* Sun-kissed orange for link hovers */
+  --bg1: #012E40;     /* Navy blue for the main background */
+  --bg2: #013A63;     /* Slightly lighter navy for gradients */
+  --bg3: #046E8F;     /* Muted seafoam green for cards */
+  --bg3-light: #058CAA; /* Brighter seafoam for variation */
+  --main: #E8F1F2;    /* Soft off-white for text and content */
+}
+
+/* Middle Blue */
+.theme-blue {
+  --accent1: #98A5CC; /* Soft blue for headers and highlights */
+  --accent2: #FFD700; /* Yellow to contrast bg3 for link hovers */
+  --bg1: #1A1A2E;     /* Deep navy for the main background */
+  --bg2: #2E3A59;     /* Slightly lighter navy for header, footer, and gradient backgrounds */
+  --bg3: #44577C;     /* Muted blue-gray for cards or containers */
+  --bg3-light: #566D8F; /* Lighter variant for cards */
+  --main: #F5F5F5;    /* Off-white for text and primary content */
+}
+
+/* Darker blue (for Duke) */
+.theme-dark-blue {
+  --accent1: #4C84C4; /* Brighter Duke Blue for headers and highlights */
+  --accent2: #FFC107; /* Golden yellow for contrast and link hovers */
+  --bg1: #0A1128;     /* Very dark navy for the main background */
+  --bg2: #1B254F;     /* Slightly lighter Duke Blue for header, footer, and gradients */
+  --bg3: #26385E;     /* Muted medium blue for cards or containers */
+  --bg3-light: #375076; /* Lighter blue for variation */
+  --main: #EDEDED;    /* Light gray for text and primary content */
+}
+
+/* Purple */
+.theme-purple {
+  --accent1: #A288C2; /* Lavender for headers and highlights */
+  --accent2: #FFCC80; /* Warm peach for link hovers */
+  --bg1: #201C2B;     /* Deep plum for the main background */
+  --bg2: #2E2740;     /* Slightly lighter plum for gradients */
+  --bg3: #413657;     /* Muted purple-gray for cards */
+  --bg3-light: #54496D; /* Lighter purple for variation */
+  --main: #EDE7F6;    /* Soft lavender-gray for text and content */
+}
+
+/* Maroon */
+.theme-maroon {
+  --accent1: #D77A61; /* Coral red for headers and highlights */
+  --accent2: #F4D35E; /* Mustard yellow for link hovers */
+  --bg1: #2E1F27;     /* Deep maroon for the main background */
+  --bg2: #3E2D38;     /* Slightly lighter maroon for gradients */
+  --bg3: #564D51;     /* Warm taupe for cards */
+  --bg3-light: #6E5F67; /* Lighter taupe for variation */
+  --main: #F5F5F5;    /* Neutral off-white for text and content */
+}
+
+/* Brown */
+.theme-brown {
+  --accent1: #8C7A5E; /* Warm beige for headers and highlights */
+  --accent2: #D9B44A; /* Goldenrod for link hovers */
+  --bg1: #1C1B18;     /* Deep espresso for the main background */
+  --bg2: #2F2B26;     /* Slightly lighter espresso for gradients */
+  --bg3: #463D38;     /* Muted brown for cards with more contrast */
+  --bg3-light: #5A514B; /* Slightly lighter variant for cards */
+  --main: #F4EDE4;    /* Creamy white for text and content */
+}
+
+/* Cotton candy */
+.theme-cotton-candy {
+  --accent1: #F48FB1; /* Cheerful pink for headers and highlights */
+  --accent2: #81C784; /* Refreshing green for link hovers */
+  --bg1: #F5F5F5;     /* Light gray for the main background */
+  --bg2: #E8EAF6;     /* Pastel blue for gradients */
+  --bg3: #D1C4E9;     /* Lavender for cards */
+  --bg3-light: #E6E1F3; /* Lighter variant for cards */
+  --bg3-dark: #B39DDB; /* Darker variant for cards */
+  --main: #212121;    /* Dark gray for text and content */
+}
+
+/* Modern (gray/coral) */
+.theme-grey-modern {
+  --accent1: #FF6B6B; /* Vibrant coral for headers and highlights */
+  --accent2: #4ECDC4; /* Teal for link hovers */
+  --bg1: #222831;     /* Dark gray for the main background */
+  --bg2: #393E46;     /* Medium gray for header and footer */
+  --bg3: #444B54;     /* Distinct gray for cards with contrast */
+  --bg3-light: #555D68; /* Slightly lighter variant for cards */
+  --main: #FFFFFF;    /* Crisp white for text and content */
+}
+
+/* Dark w blue highlights */
+.theme-dark-modern {
+  --accent1: #6f99cf; /* Steel blue for headers and highlights */
+  --accent2: #98C1D9; /* Lighter blue for link hovers */
+  --bg1: #121212;     /* Almost black for the main background */
+  --bg2: #1F1F1F;     /* Charcoal for gradients */
+  --bg3: #2E2E2E;     /* Mid-gray for cards */
+  --bg3-light: #404040; /* Slightly lighter gray for variation */
+  --main: #F4F4F4;    /* Light gray for text and content */
+}
+
+
+/* Global */
+
+hr {
+  border: 0; 
+  height: 2px; 
+  background: var(--main);
+}
+
+a {
+  display: block;
+  font-weight: 500;
+  text-decoration: inherit;
 }
 
 body {
@@ -26,13 +167,14 @@ body {
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
-  /* background: linear-gradient(180deg, #3a3a3a, #2E3A4D, #3a3a3a); A bit more contrast */
   background: linear-gradient(180deg, var(--bg1), var(--bg2), var(--bg1));
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  text-align: center;
+  color: var(--accent1);
 }
 
 button {
@@ -52,17 +194,4 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
