@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import '../index.css'
 
 const themes = [
@@ -26,8 +26,29 @@ const ColorSwitch = () => {
     localStorage.setItem('theme', currentTheme); // Persist theme
   }, [currentTheme]);
 
+  // For height placement
+  const [headerHeight, setHeaderHeight] = useState(0);
+
+  useEffect(() => {
+    const header = document.getElementById("header");
+    if (header) {
+      setHeaderHeight(header.offsetHeight);
+      console.log(header.offsetHeight)
+    }
+
+    const resizeListener = () => {
+      if (header) {
+        setHeaderHeight(header.offsetHeight);
+        console.log(header.offsetHeight)
+      }
+    };
+
+    window.addEventListener("resize", resizeListener);
+    return () => window.removeEventListener("resize", resizeListener);
+  }, []);
+
   return (
-    <div className="color-switch">
+    <div className="color-switch" style={{ top: headerHeight + 10 }}>
       <label htmlFor="theme-select">Choose Theme:</label>
       <select
         id="theme-select"

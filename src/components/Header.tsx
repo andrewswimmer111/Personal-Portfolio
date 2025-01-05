@@ -10,7 +10,7 @@ const Header: React.FC = () => {
     };
 
     return (
-        <div className="header">
+        <div className="header" id="header">
             <h1 className="header-name"> Andrew Li </h1>
             <nav className="header-nav">
                 {['About', 'Projects', 'Extracurriculars', 'Skills', 'Contact'].map((link) => (

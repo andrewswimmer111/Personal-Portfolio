@@ -534,7 +534,39 @@
     transition: color 0.2s ease;
 }
 
+/* Color Switcher */
 
+.color-switch {
+    position: absolute; 
+    right: 10px;
+    background: var(--bg3);
+    padding: 8px 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.color-switch label {
+    font-size: 14px; 
+    color: var(--main);
+    margin-right: 10px;
+}
+
+.color-switch-select {
+    background: var(--bg3);
+    color: var(--main); 
+    border: 1px solid var(--main, #555); 
+    border-radius: 5px; 
+    padding: 6px 12px; 
+    font-size: 14px; 
+    cursor: pointer;
+    width: 160px;
+    transition: background 0.3s, box-shadow 0.2s;
+}
+
+.color-switch-select:hover,
+.color-switch-select:focus {
+  outline: none; 
+}
 
 
 /* Responsiveness */
@@ -560,6 +592,14 @@
     }
     .extra-card-img {
         align-items: center;
+    }
+
+    .color-switch {
+        padding: 4px 16px;
+    }
+
+    .color-switch-select {
+        padding: 3px 6px;
     }
 
 }
@@ -591,6 +631,7 @@
         flex-direction: column;
     }
     .intro-container {
+        margin-top: 2em;
         flex-direction: column;
     }
     .intro-text {
@@ -633,5 +674,5 @@
     .contact-form-warning {
         margin-top: 1em;
     }
-
 }
+
