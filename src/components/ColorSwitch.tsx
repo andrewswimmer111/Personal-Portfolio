@@ -47,21 +47,33 @@ const ColorSwitch = () => {
     return () => window.removeEventListener("resize", resizeListener);
   }, []);
 
+  // For collapsing
+  const [isShowing, setIsShowing] = useState(true);
+
+
+
   return (
-    <div className="color-switch" style={{ top: headerHeight + 10 }}>
-      <label htmlFor="theme-select">Choose Theme:</label>
-      <select
-        id="theme-select"
-        value={currentTheme}
-        onChange={(e) => setCurrentTheme(e.target.value)}
-        className="color-switch-select"
-      >
-        {themes.map((theme) => (
-          <option key={theme} value={theme}>
-            {theme.replace('theme-', '').replace('-', ' ').toUpperCase()}
-          </option>
-        ))}
-      </select>
+    <div className={`color-switch ${isShowing ? "expanded" : "collapsed"}`} style={{ top: headerHeight + 10 }}>
+
+        <button onClick={() => setIsShowing(!isShowing)} className='show-colorSwitch-button'> 
+            {isShowing ? `>`: `<`}
+        </button>
+
+        <div className={`color-switch-controls ${isShowing ? "expanded" : "collapsed"}`}>
+            <label htmlFor="theme-select">Choose Theme:</label>
+            <select
+                id="theme-select"
+                value={currentTheme}
+                onChange={(e) => setCurrentTheme(e.target.value)}
+                className="color-switch-select"
+            >
+                {themes.map((theme) => (
+                <option key={theme} value={theme}>
+                    {theme.replace('theme-', '').replace('-', ' ').toUpperCase()}
+                </option>
+                ))}
+            </select>
+        </div>
     </div>
   );
 };

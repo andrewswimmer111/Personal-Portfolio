@@ -543,12 +543,27 @@
     padding: 8px 16px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease; 
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.color-switch.expanded {
+    width: 340px;
+}
+
+.color-switch.collapsed {
+    width: 44px;
 }
 
 .color-switch label {
     font-size: 14px; 
     color: var(--main);
     margin-right: 10px;
+    margin-left: 10px;
 }
 
 .color-switch-select {
@@ -568,6 +583,30 @@
   outline: none; 
 }
 
+.show-colorSwitch-button {
+    background-color: var(--main);
+    color: var(--bg3);
+    transition: transform 0.2s ease-in-out;
+}
+
+.show-colorSwitch-button:hover {
+    transform: scale(1.05);
+}
+
+.show-colorSwitch-button:focus {
+    outline-color: var(--accent1);
+}
+
+.color-switch-controls {
+    opacity: 1; /* Fully visible by default */
+    visibility: visible; /* Content is visible */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.color-switch-controls.collapsed {
+    opacity: 0; /* Fade out the content */
+    visibility: hidden; /* Hide the content when collapsed */
+}
 
 /* Responsiveness */
 
@@ -600,6 +639,9 @@
 
     .color-switch-select {
         padding: 3px 6px;
+    }
+    .show-colorSwitch-button {
+        padding: 0.3em 1em;
     }
 
 }
