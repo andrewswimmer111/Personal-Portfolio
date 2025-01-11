@@ -12,12 +12,7 @@ const Extracurriculars:React.FC = () => {
         }
     ]
 
-    const extra = [
-        {
-            title: "Teaching Assistant",
-            description: `When I’m excited about something, I want others to feel that excitement too. That’s why I work as a TA for CS101—so I share my passion for programming with students. Whether it’s during lab sessions or office hours, I strive to provide clear explanations that help students build confidence in the material.`,
-            link: ""
-        },        
+    const extra = [   
         {
             title: "Student Developer Intern ",
             description: `As a Student Developer Intern for Duke OIT, I enhance and expand the Community Capital website by implementing upgrades to improve its functionality. I also collaborate with community leaders from various counties to broaden the website's scope and impact.`,
@@ -33,6 +28,11 @@ const Extracurriculars:React.FC = () => {
             description: `After reflecting on the ACE trip to Panama, my group of student-athletes is in the process of launching the Rising Athletes Foundation, an organization aimed at providing comprehensive support to high school athletes, enabling them to turn their athletic abilities into opportunities for higher education.`,
             link: "https://rafwebsite.pages.dev/"
         },
+        {
+            title: "Teaching Assistant",
+            description: `When I’m excited about something, I want others to feel the same. That’s why I worked as a TA for CS101—so I could share my passion for programming with students. Whether during lab sessions or office hours, I provided clear explanations that helped students build confidence in the material.`,
+            link: ""
+        },     
     ]
     return (
         <div id="Extracurriculars" className="extra-section  section-correction">
