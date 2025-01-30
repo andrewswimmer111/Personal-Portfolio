@@ -49,7 +49,8 @@ const Skills:React.FC = () => {
             {name: "Git", proficiency: "Intermediate"},
             {name: "Docker", proficiency: "Intermediate"},
             {name: "Command Line", proficiency: "Basic"},
-            {name: "AWS EC2", proficiency: "Basic"},
+            {name: "Heroku", proficiency: "Basic"},
+            {name: "AWS EC2", proficiency: "Novice"},
             {name: "DNS", proficiency: "Novice"},
 
           ]
