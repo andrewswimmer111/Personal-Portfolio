@@ -30,6 +30,7 @@ const Skills:React.FC = () => {
             { name: "TypeScript", proficiency: "Intermediate" },
             { name: "Python", proficiency: "Basic" },
             { name: "Ruby", proficiency: "Novice" },
+            { name: "C", proficiency: "Novice" },
           ]
         },
         {

@@ -26,7 +26,7 @@ const Extracurriculars:React.FC = () => {
         {
             title: "RAF Mentor ",
             description: `After reflecting on the ACE trip to Panama, my group of student-athletes is in the process of launching the Rising Athletes Foundation, an organization aimed at providing comprehensive support to high school athletes, enabling them to turn their athletic abilities into opportunities for higher education.`,
-            link: "https://rafwebsite.pages.dev/"
+            link: "https://risingathletesfoundation.onrender.com/"
         },
         {
             title: "Teaching Assistant",
