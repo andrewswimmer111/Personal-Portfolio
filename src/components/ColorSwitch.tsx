@@ -6,11 +6,8 @@ const themes = [
   'theme-simple-dark',
   'theme-teal',
   'theme-blue',
-  'theme-dark-blue',
   'theme-purple',
-  'theme-maroon',
   'theme-brown',
-  'theme-cotton-candy',
   'theme-grey-modern',
   'theme-dark-modern',
 ];

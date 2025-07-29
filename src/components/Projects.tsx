@@ -7,7 +7,7 @@ const Projects: React.FC = () => {
             title: "Community Capital",
             description: "When families move to a new neighborhood, finding nearby community resources can be challenging. To address this, I worked with a team of five students to design a school-centered, resource visualization website that covers the Durham and Vance counties of North Carolina.",
             imageURL: "/images/community.png",
-            projectLink: "https://community-capital-test.oit.duke.edu/",
+            projectLink: "https://www.communityschoolscapital.org/",
         },
         {
             title: "Custom Sports Newsletter",

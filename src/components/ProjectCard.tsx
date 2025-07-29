@@ -10,9 +10,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageURL,
     return (
         <div className="project-card">
             <div className="project-title">{title}</div>
-            <div className="project-image-container">
+            <a href={projectLink} target="_blank" className="project-image-container">
                 <img src={imageURL} className="project-image"></img>
-            </div>
+            </a>
             <div className="project-body">{description}</div>
             <a className="project-link" href={projectLink} target="_blank">{projectLink} </a>
         </div>

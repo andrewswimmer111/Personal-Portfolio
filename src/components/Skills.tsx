@@ -28,8 +28,8 @@ const Skills:React.FC = () => {
             { name: "Java", proficiency: "Intermediate" },
             { name: "JavaScript", proficiency: "Intermediate" },
             { name: "TypeScript", proficiency: "Intermediate" },
-            { name: "Python", proficiency: "Basic" },
-            { name: "Ruby", proficiency: "Novice" },
+            { name: "Python", proficiency: "Intermediate" },
+            { name: "Ruby", proficiency: "Basic" },
             { name: "C", proficiency: "Novice" },
           ]
         },
@@ -38,9 +38,9 @@ const Skills:React.FC = () => {
           skills: [
             { name: "React", proficiency: "Intermediate" },
             { name: "Ruby on Rails", proficiency: "Intermediate" },
-            { name: "React Native", proficiency: "Basic" },
             { name: "TailwindCSS", proficiency: "Basic" },
             { name: "HTML Canvas", proficiency: "Basic" },
+            { name: "React Native", proficiency: "Novice" },
             { name: "Express.js", proficiency: "Novice" },
         ]
         },
@@ -49,10 +49,10 @@ const Skills:React.FC = () => {
           skills: [
             {name: "Git", proficiency: "Intermediate"},
             {name: "Docker", proficiency: "Intermediate"},
-            {name: "Command Line", proficiency: "Basic"},
+            {name: "Command Line", proficiency: "Intermediate"},
             {name: "Heroku", proficiency: "Basic"},
-            {name: "AWS EC2", proficiency: "Novice"},
-            {name: "DNS", proficiency: "Novice"},
+            {name: "AWS", proficiency: "Novice"},
+            {name: "Google Cloud", proficiency: "Novice"},
 
           ]
         }

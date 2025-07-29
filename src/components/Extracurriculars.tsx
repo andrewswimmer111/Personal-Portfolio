@@ -6,7 +6,7 @@ const Extracurriculars:React.FC = () => {
     const extraImg = [
         {
             title: "Varsity Athlete ",
-            description: `As a D1 swimmer at Duke, I dedicate a lot of my time to improving in the pool. My experiences have taught me the power of resilience and hard work, and have given me the desire for personal growth in my daily life.  I hope to carry this commitment to improvement into the future, always striving to become the best version of myself that I can be. <br/><br/> Swimming has taught me many lessons, and in order to give back to the sport, I’ve served as a private swim coach for the past three summers. It’s incredibly rewarding to see my students develop and find joy through the sport of swimming.`,
+            description: `As a D1 swimmer at Duke, I dedicate a lot of my time to improving in the pool. I've learned the power of resilience and hard work, and therefore have gained the desire for personal growth in my daily life.  I hope to carry this commitment to improvement into the future, always striving to become the best version of myself that I can be. <br/><br/> Swimming has taught me many lessons, and in order to give back to the sport, I’ve worked as a private swim coach for the past four summers. It’s incredibly rewarding to see my students develop and find joy through the sport of swimming.`,
             imageURLs: ["/images/butterfly.JPG", "/images/backstroke.JPG", "/images/breaststroke.JPG"],
             link: "https://goduke.com/sports/swimming-and-diving/roster/andrew-li/21496"
         }
@@ -14,19 +14,19 @@ const Extracurriculars:React.FC = () => {
 
     const extra = [   
         {
+            title: "Student Researcher ",
+            description: `During Summer 2025, as a part of Duke's CS+ program, I researched fingerprinting-based cookie respawning, a web tracking mechanism. A partner and I designed a novel methodology and conducted a large scale measurement study. We are writing a research paper, targeting submisison in Fall 2025.`,
+            link: "https://cs.duke.edu/undergraduate/research/csplus"
+        },
+        {
             title: "Student Developer Intern ",
-            description: `As a Student Developer Intern for Duke OIT, I enhance and expand the Community Capital website by implementing upgrades to improve its functionality. I also collaborate with community leaders from various counties to broaden the website's scope and impact.`,
+            description: `During the 2024-2025 school year, I worked for Duke OIT to enhance and expand the Community Capital website, collaborating with community leaders to broaden the website's scope and impact. I also presented my work at the 2025 National Community Schools and Family Engagement Conference.`,
             link: "https://codeplus.duke.edu/project/visualizing-assets-public-school-communities-durham/"
         },
         {
             title: "ACE Participant ",
             description: `During Summer 2024, I was selected to join a week-long trip to Panama through the Rubenstein Student-Athlete Civic Engagement Program (ACE), leading a volleyball camp at a rural elementary school. The experience strengthened my leadership, collaboration, and global perspective.`,
             link: "https://ace.duke.edu/past-programs/ace-in-panama-2024/"
-        },
-        {
-            title: "RAF Mentor ",
-            description: `After reflecting on the ACE trip to Panama, my group of student-athletes is in the process of launching the Rising Athletes Foundation, an organization aimed at providing comprehensive support to high school athletes, enabling them to turn their athletic abilities into opportunities for higher education.`,
-            link: "https://risingathletesfoundation.onrender.com/"
         },
         {
             title: "Teaching Assistant",
@@ -36,7 +36,7 @@ const Extracurriculars:React.FC = () => {
     ]
     return (
         <div id="Extracurriculars" className="extra-section  section-correction">
-            <h1> Extracurriculars</h1>
+            <h1> Extracurriculars / Experiences</h1>
             <div className="extra-grid">
                 {extraImg.map((extra, index) => ( 
                     <ExtraCardImg
