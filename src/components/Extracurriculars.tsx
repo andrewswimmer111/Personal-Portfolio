@@ -14,14 +14,14 @@ const Extracurriculars:React.FC = () => {
 
     const extra = [   
         {
+            title: "Student Developer Intern ",
+            description: `Since the 2024-2025 school year, I have been working for Duke OIT to enhance and expand the Community Capital website, collaborating with community leaders to broaden the website's scope and impact. I also presented my work at the 2025 National Community Schools and Family Engagement Conference.`,
+            link: "https://codeplus.duke.edu/project/visualizing-assets-public-school-communities-durham/"
+        },
+        {
             title: "Student Researcher ",
             description: `During Summer 2025, as a part of Duke's CS+ program, I researched fingerprinting-based cookie respawning, a web tracking mechanism. A partner and I designed a novel methodology and conducted a large scale measurement study. We are writing a research paper, targeting submisison in Fall 2025.`,
             link: "https://cs.duke.edu/undergraduate/research/csplus"
-        },
-        {
-            title: "Student Developer Intern ",
-            description: `During the 2024-2025 school year, I worked for Duke OIT to enhance and expand the Community Capital website, collaborating with community leaders to broaden the website's scope and impact. I also presented my work at the 2025 National Community Schools and Family Engagement Conference.`,
-            link: "https://codeplus.duke.edu/project/visualizing-assets-public-school-communities-durham/"
         },
         {
             title: "ACE Participant ",

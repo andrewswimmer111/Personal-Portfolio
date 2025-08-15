@@ -8,8 +8,7 @@ const Intro: React.FC = () => {
                 <h1> Andrew Li </h1>
                 <h3>
                     I’m a junior student-athlete at Duke University majoring in computer science. 
-                    While I currently have a strong interest in software engineering, I’m 
-                    also open to exploring other areas within the tech field where I can learn and grow. 
+                    I’m open to exploring all areas within the tech field where I can learn and grow. 
                     I love personal development, so I’m always looking for opportunities to take on new challenges and expand my skills!
                 </h3>
             </div>

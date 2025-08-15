@@ -25,10 +25,10 @@ const Skills:React.FC = () => {
         {
           categoryName: "Programming Languages",
           skills: [
-            { name: "Java", proficiency: "Intermediate" },
             { name: "JavaScript", proficiency: "Intermediate" },
             { name: "TypeScript", proficiency: "Intermediate" },
             { name: "Python", proficiency: "Intermediate" },
+            { name: "Java", proficiency: "Basic" },
             { name: "Ruby", proficiency: "Basic" },
             { name: "C", proficiency: "Novice" },
           ]
@@ -38,10 +38,10 @@ const Skills:React.FC = () => {
           skills: [
             { name: "React", proficiency: "Intermediate" },
             { name: "Ruby on Rails", proficiency: "Intermediate" },
+            { name: "Express.js", proficiency: "Intermediate" },
             { name: "TailwindCSS", proficiency: "Basic" },
             { name: "HTML Canvas", proficiency: "Basic" },
             { name: "React Native", proficiency: "Novice" },
-            { name: "Express.js", proficiency: "Novice" },
         ]
         },
         {
@@ -50,10 +50,9 @@ const Skills:React.FC = () => {
             {name: "Git", proficiency: "Intermediate"},
             {name: "Docker", proficiency: "Intermediate"},
             {name: "Command Line", proficiency: "Intermediate"},
-            {name: "Heroku", proficiency: "Basic"},
-            {name: "AWS", proficiency: "Novice"},
-            {name: "Google Cloud", proficiency: "Novice"},
-
+            { name: "Prisma", proficiency: "Intermediate" },
+            { name: "PostgreSQL", proficiency: "Basic" },
+            {name: "Cloud Platforms", proficiency: "Novice"},
           ]
         }
     ];

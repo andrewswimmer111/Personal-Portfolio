@@ -10,22 +10,23 @@ const Projects: React.FC = () => {
             projectLink: "https://www.communityschoolscapital.org/",
         },
         {
+            title: "Duke Food Tracker",
+            description: "Managing food point budgets can be a major struggle for many college students. To address this problem, I created a website where students can log their meals and view stats such as their most ordered meals, favorite restaurants, and total food point consumption.",
+            imageURL: "/images/food.png",
+            projectLink: "http://vcm-48060.vm.duke.edu",
+        },  
+        {
             title: "Custom Sports Newsletter",
             description: "In order to help those with busy schedules stay up to date on their favorite sports teams, a partner and I developed a personalized sports newsletter platform. Users can subscribe to receive weekly emails featuring the latest updates and game results of their favorite teams.",
             imageURL: "/images/sports.png",
-            projectLink: "",
-        },
-        {
-            title: "Duke Food Tracker",
-            description: "Managing food point budgets can be a major struggle for many college students. To address this problem, I created a website where students can log their meals and view stats such as their most ordered meals, favorite restaurants, and total food point consumption. ",
-            imageURL: "/images/food6.png",
-            projectLink: "",
+            projectLink: "http://vcm-48060.vm.duke.edu:3001/",
         },
     ]
 
     return (
         <div id="Projects" className="project-section section-correction">
             <h1> Previous Projects </h1>
+            <div className="filter-instructions">  Demo logins: punkrocker@gmail.com / yesiam (admin access not included) </div>
             <div className="project-grid"> 
                 {projects.map((project, index) => (
                 <ProjectCard
